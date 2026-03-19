@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вибір користувача — Animal Farm</title>
+  <link rel="stylesheet" href="styles/site.css" />
+</head>
+<body>
+  <div class="background-grid"></div>
+  <div class="background-aurora"></div>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">Animal Farm / Choice</div>
+      <nav class="nav" aria-label="Основна навігація">
+        <a href="index.html">Головна</a>
+        <a href="story.html">Сюжет</a>
+        <a href="characters.html">Персонажі</a>
+        <a href="truth.html">Правда</a>
+        <a class="active" href="choice.html">Вибір</a>
+        <a href="final.html">Фінал</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="page-header fade-sequence visible">
+        <p class="eyebrow">Тест на покору</p>
+        <h1 class="page-title">Що ти обираєш?</h1>
+        <p>Система завжди пропонує два шляхи: комфортну тишу або правду, яка коштує стабільності. Натисни й побач, як зміниться сам екран.</p>
+      </section>
+
+      <section class="choices-section">
+        <div class="choice-grid">
+          <button class="choice-button safe" type="button" data-choice="silence">
+            <strong>Не ставити запитань</strong>
+            <span class="microcopy">Безпечний варіант, де все пояснено за тебе.</span>
+          </button>
+          <button class="choice-button truth" type="button" data-choice="truth">
+            <strong>Шукати правду</strong>
+            <span class="microcopy">Небезпечний вибір: червоний шум, збій і тремтіння.</span>
+          </button>
+        </div>
+
+        <div class="result-panel" data-choice-result>
+          <span class="result-state" data-choice-state>Очікування</span>
+          <h2 data-choice-title>Рішення ще не ухвалено</h2>
+          <p data-choice-text>Натисни одну з кнопок, щоб побачити, як система реагує на покору або сумнів.</p>
+        </div>
+      </section>
+    </main>
+
+    <p class="footer-note">Навіть коли тобі дозволяють обирати, хтось уже підготував наслідки.</p>
+  </div>
+
+  <button class="audio-toggle" type="button" data-audio-toggle>Звук: вимкнено</button>
+  <script src="scripts/site.js" defer></script>
+</body>
+</html>

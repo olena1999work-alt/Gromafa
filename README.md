@@ -1,17 +1,16 @@
-# Gromafa
+# Animal Farm Static Site
 
-Інтерактивний dark-mode вебсайт-презентація за мотивами **Animal Farm / Колгосп тварин**.
+Статичний багатосторінковий сайт на чистих HTML, CSS і JavaScript.
 
-## Запуск
+## Як відкрити
 
-```bash
-npm install
-npm run dev
-```
+Просто відкрий `index.html` у браузері.
 
-## Стек
+## Сторінки
 
-- Next.js 15
-- React 19
-- Tailwind CSS 3
-- Framer Motion
+- `index.html`
+- `story.html`
+- `characters.html`
+- `truth.html`
+- `choice.html`
+- `final.html`

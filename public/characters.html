@@ -1,89 +1,71 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Персонажі — Animal Farm</title>
-  <link rel="stylesheet" href="/styles/site.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Персонажі | Animal Farm</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <div class="background-grid"></div>
-  <div class="background-aurora"></div>
-  <div class="site-shell">
-    <header class="topbar">
-      <div class="brand">Animal Farm / Characters</div>
-      <nav class="nav" aria-label="Основна навігація">
-        <a href="/index.html">Головна</a>
-        <a href="/story.html">Сюжет</a>
-        <a class="active" href="/characters.html">Персонажі</a>
-        <a href="/truth.html">Правда</a>
-        <a href="/choice.html">Вибір</a>
-        <a href="/final.html">Фінал</a>
-      </nav>
-    </header>
+<body data-page="characters">
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="/index.html">Animal Farm</a>
+    <nav class="site-nav" aria-label="Основна навігація">
+      <a href="/index.html">Початок</a>
+      <a href="/story.html">Сцени</a>
+      <a class="is-active" href="/characters.html">Персонажі</a>
+      <a href="/truth.html">Правда</a>
+      <a href="/choice.html">Вибір</a>
+      <a href="/final.html">Фінал</a>
+    </nav>
+  </header>
 
-    <main class="page">
-      <section class="page-header fade-sequence visible">
-        <p class="eyebrow">Хто керує історією</p>
-        <h1 class="page-title">Персонажі</h1>
-        <p>Наведи курсор на картку, щоб побачити роль кожного голосу в системі влади, перекручування й мовчазної згоди.</p>
-      </section>
+  <main class="shell">
+    <section class="page-heading fade-in visible">
+      <p class="section-label">Дійові особи</p>
+      <h1>Хто формує темряву ферми</h1>
+      <p class="lead">Наведи курсор на картки й подивись, як різні ролі підтримують одну і ту саму конструкцію страху.</p>
+    </section>
 
-      <section class="characters-grid">
-        <article class="character-card" data-tone="power" tabindex="0">
-          <div class="character-overlay">
-            <h2>Наполеон</h2>
-            <small>Влада</small>
-            <p>Центр контролю. Він майже не пояснює, лише змушує інших підлаштовувати реальність під його інтерес.</p>
-          </div>
-        </article>
+    <section class="character-grid">
+      <article class="character-card reveal-on-scroll" tabindex="0">
+        <span class="character-role">Влада</span>
+        <h2>Наполеон</h2>
+        <p>Мовчазний центр тяжіння, який перетворює революцію на інструмент власного панування.</p>
+      </article>
 
-        <article class="character-card" data-tone="power" tabindex="0">
-          <div class="character-overlay">
-            <h2>Сквілер</h2>
-            <small>Пропаганда</small>
-            <p>Майстер м’якого тиску. Перетворює брехню на логічне уточнення і продає страх як турботу.</p>
-          </div>
-        </article>
+      <article class="character-card reveal-on-scroll" tabindex="0">
+        <span class="character-role">Пропаганда</span>
+        <h2>Сквілер</h2>
+        <p>Голос, що шліфує брехню до блиску логіки й називає підміну «уточненням».</p>
+      </article>
 
-        <article class="character-card" data-tone="faithful" tabindex="0">
-          <div class="character-overlay">
-            <h2>Боксер</h2>
-            <small>Лояльність</small>
-            <p>Сила без сумніву. Його праця підживлює режим, бо виснаження часто сильніше за внутрішній спротив.</p>
-          </div>
-        </article>
+      <article class="character-card reveal-on-scroll" tabindex="0">
+        <span class="character-role">Лояльність</span>
+        <h2>Боксер</h2>
+        <p>Сила, яка чесно служить ідеї, не помічаючи, як її ж праця живить новий гніт.</p>
+      </article>
 
-        <article class="character-card" data-tone="voice" tabindex="0">
-          <div class="character-overlay">
-            <h2>Голос народу</h2>
-            <small>Колективна пам’ять</small>
-            <p>Той, хто все ще відчуває неспівпадіння, але боїться сказати його першим. Шепіт, який можуть заглушити.</p>
-          </div>
-        </article>
+      <article class="character-card reveal-on-scroll" tabindex="0">
+        <span class="character-role">Пам’ять</span>
+        <h2>Кловер</h2>
+        <p>Відчуває, що слова змінилися, але вже не може до кінця довіряти власному спогаду.</p>
+      </article>
 
-        <article class="character-card" data-tone="journal" tabindex="0">
-          <div class="character-overlay">
-            <h2>Незалежний журналіст</h2>
-            <small>Свідчення</small>
-            <p>Фіксує зміни до того, як їх назвуть нормою. Небезпечний не тому, що кричить, а тому, що пам’ятає.</p>
-          </div>
-        </article>
+      <article class="character-card reveal-on-scroll" tabindex="0">
+        <span class="character-role">Сумнів</span>
+        <h2>Бенджамін</h2>
+        <p>Бачить занадто багато, мовчить занадто довго і знає, що іронія не завжди рятує.</p>
+      </article>
 
-        <article class="character-card" data-tone="journal" tabindex="0">
-          <div class="character-overlay">
-            <h2>Залежний журналіст</h2>
-            <small>Ретранслятор</small>
-            <p>Повторює офіційну версію доти, доки вона не починає здаватися єдиною можливою. Комфортніший за правду.</p>
-          </div>
-        </article>
-      </section>
-    </main>
+      <article class="character-card reveal-on-scroll" tabindex="0">
+        <span class="character-role">Маса</span>
+        <h2>Інші тварини</h2>
+        <p>Колективний свідок, який поступово звикає до страху, якщо він поданий як нова норма.</p>
+      </article>
+    </section>
+  </main>
 
-    <p class="footer-note">Той, хто контролює опис подій, починає контролювати й самі події.</p>
-  </div>
-
-  <button class="audio-toggle" type="button" data-audio-toggle>Звук: вимкнено</button>
-  <script src="/scripts/site.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>

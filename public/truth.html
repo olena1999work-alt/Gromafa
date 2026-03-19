@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Перекручення правди — Animal Farm</title>
-  <link rel="stylesheet" href="/styles/site.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Правда | Animal Farm</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <div class="background-grid"></div>
-  <div class="background-aurora"></div>
-  <div class="site-shell">
-    <header class="topbar">
-      <div class="brand">Animal Farm / Truth</div>
-      <nav class="nav" aria-label="Основна навігація">
-        <a href="/index.html">Головна</a>
-        <a href="/story.html">Сюжет</a>
-        <a href="/characters.html">Персонажі</a>
-        <a class="active" href="/truth.html">Правда</a>
-        <a href="/choice.html">Вибір</a>
-        <a href="/final.html">Фінал</a>
-      </nav>
-    </header>
+<body data-page="truth">
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="/index.html">Animal Farm</a>
+    <nav class="site-nav" aria-label="Основна навігація">
+      <a href="/index.html">Початок</a>
+      <a href="/story.html">Сцени</a>
+      <a href="/characters.html">Персонажі</a>
+      <a class="is-active" href="/truth.html">Правда</a>
+      <a href="/choice.html">Вибір</a>
+      <a href="/final.html">Фінал</a>
+    </nav>
+  </header>
 
-    <main class="page">
-      <section class="page-header fade-sequence visible">
-        <p class="eyebrow">Інтерактив перекручення</p>
-        <h1 class="page-title">Правда змінюється тихо</h1>
-        <p>Спочатку правило здається абсолютним. Потім у нього вбудовується маленька поправка — і вся моральна рамка непомітно зсувається.</p>
-      </section>
+  <main class="shell truth-shell">
+    <section class="page-heading fade-in visible">
+      <p class="section-label">Переписування</p>
+      <h1>Правда змінюється повільно</h1>
+      <p class="lead">Спершу правило здається незмінним. Потім у ньому виникає лише кілька нових слів — і реальність уже виглядає інакше.</p>
+    </section>
 
-      <section class="truth-stage">
-        <div class="truth-screen panel" data-truth-stage>
-          <p class="eyebrow">Заповідь на стіні</p>
-          <p class="truth-rule" data-truth-rule>Жодна тварина не спить у ліжку</p>
-          <p class="truth-note" data-truth-extra>Запам’ятай, як це звучало щойно.</p>
-          <div class="button-row">
-            <button class="button primary" type="button" data-truth-button>Ти впевнений?</button>
-            <a class="button" href="/choice.html">Перейти до вибору</a>
-          </div>
-        </div>
+    <section class="truth-panel reveal-on-scroll">
+      <p class="section-label">Заповідь на стіні</p>
+      <p id="truth-line" class="truth-line">Жодна тварина не спить у ліжку</p>
+      <p class="truth-help">Зачекай кілька секунд або натисни кнопку, щоб побачити, як система виправляє твою пам’ять.</p>
+      <button id="truth-trigger" class="button button-primary" type="button">Побачити зміну</button>
+    </section>
+  </main>
 
-        <div class="panel fade-sequence visible">
-          <p class="eyebrow">Що відбувається</p>
-          <p>Маніпуляція рідко приходить як відверта заборона. Найчастіше вона приходить як дрібне уточнення, яке робить старе правило майже впізнаваним — і саме тому таким небезпечним.</p>
-        </div>
-      </section>
-    </main>
-
-    <p class="footer-note">Якщо зміна майже непомітна, її легше назвати твоєю помилкою пам’яті.</p>
-  </div>
-
-  <button class="audio-toggle" type="button" data-audio-toggle>Звук: вимкнено</button>
-  <script src="/scripts/site.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>

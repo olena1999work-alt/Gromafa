@@ -1,58 +1,46 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Вибір користувача — Animal Farm</title>
-  <link rel="stylesheet" href="/styles/site.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вибір | Animal Farm</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <div class="background-grid"></div>
-  <div class="background-aurora"></div>
-  <div class="site-shell">
-    <header class="topbar">
-      <div class="brand">Animal Farm / Choice</div>
-      <nav class="nav" aria-label="Основна навігація">
-        <a href="/index.html">Головна</a>
-        <a href="/story.html">Сюжет</a>
-        <a href="/characters.html">Персонажі</a>
-        <a href="/truth.html">Правда</a>
-        <a class="active" href="/choice.html">Вибір</a>
-        <a href="/final.html">Фінал</a>
-      </nav>
-    </header>
+<body data-page="choice">
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="/index.html">Animal Farm</a>
+    <nav class="site-nav" aria-label="Основна навігація">
+      <a href="/index.html">Початок</a>
+      <a href="/story.html">Сцени</a>
+      <a href="/characters.html">Персонажі</a>
+      <a href="/truth.html">Правда</a>
+      <a class="is-active" href="/choice.html">Вибір</a>
+      <a href="/final.html">Фінал</a>
+    </nav>
+  </header>
 
-    <main class="page">
-      <section class="page-header fade-sequence visible">
-        <p class="eyebrow">Тест на покору</p>
-        <h1 class="page-title">Що ти обираєш?</h1>
-        <p>Система завжди пропонує два шляхи: комфортну тишу або правду, яка коштує стабільності. Натисни й побач, як зміниться сам екран.</p>
-      </section>
+  <main class="shell">
+    <section class="page-heading fade-in visible">
+      <p class="section-label">Вузол напруги</p>
+      <h1>Чи готовий ти ставити запитання?</h1>
+      <p class="lead">Обери спокій або пошук правди. Система відповість одразу — але не однаково.</p>
+    </section>
 
-      <section class="choices-section">
-        <div class="choice-grid">
-          <button class="choice-button safe" type="button" data-choice="silence">
-            <strong>Не ставити запитань</strong>
-            <span class="microcopy">Безпечний варіант, де все пояснено за тебе.</span>
-          </button>
-          <button class="choice-button truth" type="button" data-choice="truth">
-            <strong>Шукати правду</strong>
-            <span class="microcopy">Небезпечний вибір: червоний шум, збій і тремтіння.</span>
-          </button>
-        </div>
+    <section class="choice-layout">
+      <div class="choice-buttons reveal-on-scroll">
+        <button class="choice-button" type="button" data-choice="silence">Не ставити запитань</button>
+        <button class="choice-button choice-button-danger" type="button" data-choice="truth">Шукати правду</button>
+      </div>
 
-        <div class="result-panel" data-choice-result>
-          <span class="result-state" data-choice-state>Очікування</span>
-          <h2 data-choice-title>Рішення ще не ухвалено</h2>
-          <p data-choice-text>Натисни одну з кнопок, щоб побачити, як система реагує на покору або сумнів.</p>
-        </div>
-      </section>
-    </main>
+      <article id="choice-result" class="choice-result reveal-on-scroll">
+        <p class="section-label">Результат</p>
+        <h2>Сцена завмерла</h2>
+        <p>Натисни одну з кнопок, щоб побачити, як змінюється тон вистави.</p>
+      </article>
+    </section>
+  </main>
 
-    <p class="footer-note">Навіть коли тобі дозволяють обирати, хтось уже підготував наслідки.</p>
-  </div>
-
-  <button class="audio-toggle" type="button" data-audio-toggle>Звук: вимкнено</button>
-  <script src="/scripts/site.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>

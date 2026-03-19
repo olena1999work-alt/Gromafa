@@ -1,143 +1,71 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Сюжет і сцени — Animal Farm</title>
-  <link rel="stylesheet" href="/styles/site.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сцени | Animal Farm</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <div class="background-grid"></div>
-  <div class="background-aurora"></div>
-  <div class="site-shell">
-    <header class="topbar">
-      <div class="brand">Animal Farm / Story</div>
-      <nav class="nav" aria-label="Основна навігація">
-        <a href="/index.html">Головна</a>
-        <a class="active" href="/story.html">Сюжет</a>
-        <a href="/characters.html">Персонажі</a>
-        <a href="/truth.html">Правда</a>
-        <a href="/choice.html">Вибір</a>
-        <a href="/final.html">Фінал</a>
-      </nav>
-    </header>
+<body data-page="story">
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="/index.html">Animal Farm</a>
+    <nav class="site-nav" aria-label="Основна навігація">
+      <a href="/index.html">Початок</a>
+      <a class="is-active" href="/story.html">Сцени</a>
+      <a href="/characters.html">Персонажі</a>
+      <a href="/truth.html">Правда</a>
+      <a href="/choice.html">Вибір</a>
+      <a href="/final.html">Фінал</a>
+    </nav>
+  </header>
 
-    <main class="page">
-      <section class="page-header fade-sequence visible">
-        <p class="eyebrow">Акти деградації реальності</p>
-        <h1 class="page-title">Сюжет / Сцени</h1>
-        <p>Кожна сцена з’являється під час скролу як окремий фрагмент постановки — зі словами, що переконують, і паузами, які приховують головне.</p>
-      </section>
+  <main class="shell">
+    <section class="page-heading fade-in visible">
+      <p class="section-label">Сценарій</p>
+      <h1>Сцени, що проступають зі скролом</h1>
+      <p class="lead">Прокручуй вниз, ніби проходиш поміж декорацій. Кожна сцена відкриває ще одну тріщину в обіцянці рівності.</p>
+    </section>
 
-      <section class="story-timeline">
-        <article class="scene" data-reveal>
-          <div class="scene-head">
-            <strong>Сцена 1. Мрія про рівність</strong>
-            <span class="scene-accent">Відкриття</span>
-          </div>
-          <div class="scene-grid grid-two">
-            <div>
-              <p>Старий Майор говорить про свободу, і темний хлів на мить стає схожим на храм надії. Тварини слухають так уважно, наче саме слово може зняти ланцюг.</p>
-              <p class="quote">«Колись ця ферма належатиме нам, і ми більше не будемо працювати для чужого ситого спокою.»</p>
-            </div>
-            <div class="scene-quote">
-              <span>Діалог</span>
-              <p>— Ми справді зможемо жити інакше?<br />— Якщо вірити достатньо сильно, сумнів здається зрадою.</p>
-            </div>
-          </div>
-        </article>
+    <section class="story-stack">
+      <article class="scene-card reveal-on-scroll">
+        <p class="section-label">Сцена I</p>
+        <h2>Обіцянка свободи</h2>
+        <p>У темному хліві лунає мрія про спільний світ без батога. Слова ще теплі, і тварини вірять, що рівність має чіткий, непорушний зміст.</p>
+      </article>
 
-        <article class="scene" data-reveal>
-          <div class="scene-head">
-            <strong>Сцена 2. Повстання як ейфорія</strong>
-            <span class="scene-accent">Спалах</span>
-          </div>
-          <div class="scene-grid grid-two">
-            <div>
-              <p>Людський голос зникає, і ферма захлинається від захвату. Але в порожнечі, що лишається після перемоги, вже звучить нова потреба — хтось має пояснювати, що тепер правильно.</p>
-              <p class="quote">«Революція перемогла. Тепер потрібен порядок, щоб вона тривала.»</p>
-            </div>
-            <div class="scene-quote">
-              <span>Діалог</span>
-              <p>— Ми вільні?<br />— Майже. Спершу навчіться слухати правильні голоси.</p>
-            </div>
-          </div>
-        </article>
+      <article class="scene-card reveal-on-scroll">
+        <p class="section-label">Сцена II</p>
+        <h2>Повстання як ейфорія</h2>
+        <p>Людський голос стихає, і ферма на мить дихає вільніше. Але там, де вчора був страх, уже формується новий центр наказу.</p>
+      </article>
 
-        <article class="scene" data-reveal>
-          <div class="scene-head">
-            <strong>Сцена 3. Свині пишуть сенси</strong>
-            <span class="scene-accent">Перехоплення</span>
-          </div>
-          <div class="scene-grid grid-two">
-            <div>
-              <p>Поки інші працюють, дехто читає, рахує, тлумачить. Знання стає не інструментом спільного добра, а коридором до влади.</p>
-              <p class="quote">«Ми просто краще розуміємо складні речі. Отже, ми мусимо керувати.»</p>
-            </div>
-            <div class="scene-quote">
-              <span>Діалог</span>
-              <p>— Хто вирішив, що ви говоритимете за всіх?<br />— Ті, хто втомився, рідко ставлять це запитання вдруге.</p>
-            </div>
-          </div>
-        </article>
+      <article class="scene-card reveal-on-scroll">
+        <p class="section-label">Сцена III</p>
+        <h2>Ті, хто вміє читати</h2>
+        <p>Одні працюють, інші тлумачать правила. Саме в цій різниці народжується влада, яка вдає із себе необхідний порядок.</p>
+      </article>
 
-        <article class="scene" data-reveal>
-          <div class="scene-head">
-            <strong>Сцена 4. Сквілер виправляє пам’ять</strong>
-            <span class="scene-accent">Пропаганда</span>
-          </div>
-          <div class="scene-grid grid-two">
-            <div>
-              <p>Сквілер не кричить. Він посміхається, підбирає лагідні інтонації і переконує так, ніби брехня — це лише турботливе уточнення.</p>
-              <p class="quote">«Ви ж не хочете повернення старого хазяїна? Тоді довіртеся тим, хто пам’ятає за вас.»</p>
-            </div>
-            <div class="scene-quote">
-              <span>Діалог</span>
-              <p>— Але раніше було не так написано.<br />— Раніше ти, мабуть, дивився недостатньо уважно.</p>
-            </div>
-          </div>
-        </article>
+      <article class="scene-card reveal-on-scroll">
+        <p class="section-label">Сцена IV</p>
+        <h2>Мова, що зраджує пам’ять</h2>
+        <p>Пропаганда не ламає свідомість ударом. Вона лагідно підміняє вчорашні слова сьогоднішніми, поки сумнів не здається соромом.</p>
+      </article>
 
-        <article class="scene" data-reveal>
-          <div class="scene-head">
-            <strong>Сцена 5. Боксер працює замість сумніватися</strong>
-            <span class="scene-accent">Виснаження</span>
-          </div>
-          <div class="scene-grid grid-two">
-            <div>
-              <p>Боксер повторює, що треба працювати ще більше. У системі, де всі виснажені, критичне мислення стає розкішшю, а слухняність — єдиним доступним способом вижити.</p>
-              <p class="quote">«Я працюватиму ще старанніше. Якщо щось не сходиться — значить, я просто замало зробив.»</p>
-            </div>
-            <div class="scene-quote">
-              <span>Діалог</span>
-              <p>— Хіба цього достатньо?<br />— Коли тіло падає від втоми, душа рідко сперечається.</p>
-            </div>
-          </div>
-        </article>
+      <article class="scene-card reveal-on-scroll">
+        <p class="section-label">Сцена V</p>
+        <h2>Праця замість думки</h2>
+        <p>Боксер працює ще більше, ніби саме виснаження здатне врятувати спільну ідею. Та втомлені очі рідко помічають нові ланцюги.</p>
+      </article>
 
-        <article class="scene" data-reveal>
-          <div class="scene-head">
-            <strong>Сцена 6. Реальність тріскається</strong>
-            <span class="scene-accent">Фінальний зсув</span>
-          </div>
-          <div class="scene-grid grid-two">
-            <div>
-              <p>Заповіді ті самі лише на вигляд. Ті самі літери, та вже інший зміст. Тварини дивляться на стіну і розуміють: проблема не в написаному, а в тому, що вони більше не довіряють власним очам.</p>
-              <p class="quote">«Усе лишилося справедливим. Ми просто внесли маленьке уточнення.»</p>
-            </div>
-            <div class="scene-quote">
-              <span>Діалог</span>
-              <p>— То де межа брехні?<br />— Там, де більше ніхто не здатен назвати її вголос.</p>
-            </div>
-          </div>
-        </article>
-      </section>
-    </main>
+      <article class="scene-card reveal-on-scroll">
+        <p class="section-label">Сцена VI</p>
+        <h2>Межа стирається</h2>
+        <p>Коли слова на стіні вже не збігаються з пам’яттю, народжується найглибший страх: раптом неправий не режим, а ти сам.</p>
+      </article>
+    </section>
+  </main>
 
-    <p class="footer-note">Прокручуй далі — і з кожною сценою стане важче зрозуміти, що змінилося першим.</p>
-  </div>
-
-  <button class="audio-toggle" type="button" data-audio-toggle>Звук: вимкнено</button>
-  <script src="/scripts/site.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>

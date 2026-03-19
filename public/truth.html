@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Перекручення правди — Animal Farm</title>
+  <link rel="stylesheet" href="/styles/site.css" />
+</head>
+<body>
+  <div class="background-grid"></div>
+  <div class="background-aurora"></div>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="brand">Animal Farm / Truth</div>
+      <nav class="nav" aria-label="Основна навігація">
+        <a href="/index.html">Головна</a>
+        <a href="/story.html">Сюжет</a>
+        <a href="/characters.html">Персонажі</a>
+        <a class="active" href="/truth.html">Правда</a>
+        <a href="/choice.html">Вибір</a>
+        <a href="/final.html">Фінал</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="page-header fade-sequence visible">
+        <p class="eyebrow">Інтерактив перекручення</p>
+        <h1 class="page-title">Правда змінюється тихо</h1>
+        <p>Спочатку правило здається абсолютним. Потім у нього вбудовується маленька поправка — і вся моральна рамка непомітно зсувається.</p>
+      </section>
+
+      <section class="truth-stage">
+        <div class="truth-screen panel" data-truth-stage>
+          <p class="eyebrow">Заповідь на стіні</p>
+          <p class="truth-rule" data-truth-rule>Жодна тварина не спить у ліжку</p>
+          <p class="truth-note" data-truth-extra>Запам’ятай, як це звучало щойно.</p>
+          <div class="button-row">
+            <button class="button primary" type="button" data-truth-button>Ти впевнений?</button>
+            <a class="button" href="/choice.html">Перейти до вибору</a>
+          </div>
+        </div>
+
+        <div class="panel fade-sequence visible">
+          <p class="eyebrow">Що відбувається</p>
+          <p>Маніпуляція рідко приходить як відверта заборона. Найчастіше вона приходить як дрібне уточнення, яке робить старе правило майже впізнаваним — і саме тому таким небезпечним.</p>
+        </div>
+      </section>
+    </main>
+
+    <p class="footer-note">Якщо зміна майже непомітна, її легше назвати твоєю помилкою пам’яті.</p>
+  </div>
+
+  <button class="audio-toggle" type="button" data-audio-toggle>Звук: вимкнено</button>
+  <script src="/scripts/site.js" defer></script>
+</body>
+</html>
